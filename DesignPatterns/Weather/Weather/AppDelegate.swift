@@ -11,10 +11,17 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var homeController : HomeController<HomeView, HomeModel>
 
-
+    override init() {
+        self.homeController = HomeController()
+        super.init()
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        UIApplication.shared.keyWindow?.rootViewController = homeController.view
         return true
     }
 
