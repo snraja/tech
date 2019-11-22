@@ -15,18 +15,21 @@ class HomeController<HView : HomeView, HModel : HomeModel> : BaseController<Home
     public let model : HModel
 
     override init() {
-        print("HomeController init begin")
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         self.view = storyBoard.instantiateViewController(withIdentifier: "HomeView") as! HView
         self.model = HModel()
-        print("HomeController before super init begin")
         super.init()
-        print("HomeController after superinit begin")
         self.view.viewActionDelegate = self;
         self.model.modelDelegate = self;
         super.updateViewDelegate = view
         super.updateModelDelegate = model
-        print("HomeController init end")
     }
     
+    override func viewDidLoadAsync() {
+        print("ViewDidLoadAsync")
+    }
+    
+    override func viewWillAppearAsync() {
+        print("ViewWillAppearAsync")
+    }
 }

@@ -14,9 +14,7 @@ class BaseView : UIViewController, UpdateViewDelegate
     var viewActionDelegate : ViewActionDelegate? 
     
     required init?(coder: NSCoder) {
-        print("Base View Init")
         super.init(coder: coder)
-        print("Base View after Init")
     }
         
     override func viewDidLoad() {

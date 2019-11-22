@@ -13,9 +13,7 @@ class HomeView : BaseView
     @IBOutlet var tempLabel : UILabel?
         
     required init?(coder: NSCoder) {
-        print("Home View Init")
         super.init(coder: coder)
-        print("Home View After super Init")
     }
     
     override func viewDidLoad()
