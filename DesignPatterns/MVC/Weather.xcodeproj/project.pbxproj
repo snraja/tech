@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB08D0A0238825AE00B4937E /* MVC.png in Resources */ = {isa = PBXBuildFile; fileRef = AB08D09F238825AE00B4937E /* MVC.png */; };
 		ABBED5902379E9420011FB85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBED58F2379E9420011FB85 /* AppDelegate.swift */; };
 		ABBED5972379E9420011FB85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABBED5952379E9420011FB85 /* Main.storyboard */; };
 		ABBED5992379E9440011FB85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABBED5982379E9440011FB85 /* Assets.xcassets */; };
@@ -14,11 +15,11 @@
 		ABBED5A72379E9440011FB85 /* WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBED5A62379E9440011FB85 /* WeatherTests.swift */; };
 		ABBED5B22379E9440011FB85 /* WeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBED5B12379E9440011FB85 /* WeatherUITests.swift */; };
 		ABBED5CB2379F4340011FB85 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBED5C02379F4340011FB85 /* BaseController.swift */; };
-		ABBED5CC2379F4340011FB85 /* ModelUpdateDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBED5C12379F4340011FB85 /* ModelUpdateDelegate.swift */; };
-		ABBED5CD2379F4340011FB85 /* UpdateViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBED5C22379F4340011FB85 /* UpdateViewDelegate.swift */; };
-		ABBED5CE2379F4340011FB85 /* UpdateModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBED5C32379F4340011FB85 /* UpdateModelDelegate.swift */; };
+		ABBED5CC2379F4340011FB85 /* ModelToControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBED5C12379F4340011FB85 /* ModelToControllerProtocol.swift */; };
+		ABBED5CD2379F4340011FB85 /* ControllerToViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBED5C22379F4340011FB85 /* ControllerToViewProtocol.swift */; };
+		ABBED5CE2379F4340011FB85 /* ControllerToModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBED5C32379F4340011FB85 /* ControllerToModelProtocol.swift */; };
 		ABBED5CF2379F4340011FB85 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBED5C42379F4340011FB85 /* BaseModel.swift */; };
-		ABBED5D02379F4340011FB85 /* ViewActionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBED5C52379F4340011FB85 /* ViewActionDelegate.swift */; };
+		ABBED5D02379F4340011FB85 /* ViewToControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBED5C52379F4340011FB85 /* ViewToControllerProtocol.swift */; };
 		ABBED5D12379F4340011FB85 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBED5C62379F4340011FB85 /* BaseView.swift */; };
 		ABBED5D22379F4340011FB85 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBED5C82379F4340011FB85 /* HomeController.swift */; };
 		ABBED5D32379F4340011FB85 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBED5C92379F4340011FB85 /* HomeView.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB08D09F238825AE00B4937E /* MVC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MVC.png; sourceTree = "<group>"; };
 		ABBED58C2379E9420011FB85 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABBED58F2379E9420011FB85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABBED5962379E9420011FB85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -56,11 +58,11 @@
 		ABBED5B12379E9440011FB85 /* WeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherUITests.swift; sourceTree = "<group>"; };
 		ABBED5B32379E9440011FB85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABBED5C02379F4340011FB85 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
-		ABBED5C12379F4340011FB85 /* ModelUpdateDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelUpdateDelegate.swift; sourceTree = "<group>"; };
-		ABBED5C22379F4340011FB85 /* UpdateViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateViewDelegate.swift; sourceTree = "<group>"; };
-		ABBED5C32379F4340011FB85 /* UpdateModelDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateModelDelegate.swift; sourceTree = "<group>"; };
+		ABBED5C12379F4340011FB85 /* ModelToControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelToControllerProtocol.swift; sourceTree = "<group>"; };
+		ABBED5C22379F4340011FB85 /* ControllerToViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerToViewProtocol.swift; sourceTree = "<group>"; };
+		ABBED5C32379F4340011FB85 /* ControllerToModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerToModelProtocol.swift; sourceTree = "<group>"; };
 		ABBED5C42379F4340011FB85 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
-		ABBED5C52379F4340011FB85 /* ViewActionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewActionDelegate.swift; sourceTree = "<group>"; };
+		ABBED5C52379F4340011FB85 /* ViewToControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewToControllerProtocol.swift; sourceTree = "<group>"; };
 		ABBED5C62379F4340011FB85 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		ABBED5C82379F4340011FB85 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		ABBED5C92379F4340011FB85 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -155,13 +157,14 @@
 		ABBED5BF2379F4340011FB85 /* MVC */ = {
 			isa = PBXGroup;
 			children = (
+				AB08D09F238825AE00B4937E /* MVC.png */,
 				ABBED5C02379F4340011FB85 /* BaseController.swift */,
 				ABBED5C62379F4340011FB85 /* BaseView.swift */,
 				ABBED5C42379F4340011FB85 /* BaseModel.swift */,
-				ABBED5C12379F4340011FB85 /* ModelUpdateDelegate.swift */,
-				ABBED5C22379F4340011FB85 /* UpdateViewDelegate.swift */,
-				ABBED5C32379F4340011FB85 /* UpdateModelDelegate.swift */,
-				ABBED5C52379F4340011FB85 /* ViewActionDelegate.swift */,
+				ABBED5C12379F4340011FB85 /* ModelToControllerProtocol.swift */,
+				ABBED5C22379F4340011FB85 /* ControllerToViewProtocol.swift */,
+				ABBED5C32379F4340011FB85 /* ControllerToModelProtocol.swift */,
+				ABBED5C52379F4340011FB85 /* ViewToControllerProtocol.swift */,
 			);
 			path = MVC;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB08D0A0238825AE00B4937E /* MVC.png in Resources */,
 				ABBED59C2379E9440011FB85 /* LaunchScreen.storyboard in Resources */,
 				ABBED5992379E9440011FB85 /* Assets.xcassets in Resources */,
 				ABBED5972379E9420011FB85 /* Main.storyboard in Resources */,
@@ -307,12 +311,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABBED5CD2379F4340011FB85 /* UpdateViewDelegate.swift in Sources */,
+				ABBED5CD2379F4340011FB85 /* ControllerToViewProtocol.swift in Sources */,
 				ABBED5D22379F4340011FB85 /* HomeController.swift in Sources */,
 				ABBED5902379E9420011FB85 /* AppDelegate.swift in Sources */,
-				ABBED5CE2379F4340011FB85 /* UpdateModelDelegate.swift in Sources */,
-				ABBED5D02379F4340011FB85 /* ViewActionDelegate.swift in Sources */,
-				ABBED5CC2379F4340011FB85 /* ModelUpdateDelegate.swift in Sources */,
+				ABBED5CE2379F4340011FB85 /* ControllerToModelProtocol.swift in Sources */,
+				ABBED5D02379F4340011FB85 /* ViewToControllerProtocol.swift in Sources */,
+				ABBED5CC2379F4340011FB85 /* ModelToControllerProtocol.swift in Sources */,
 				ABBED5CB2379F4340011FB85 /* BaseController.swift in Sources */,
 				ABBED5D12379F4340011FB85 /* BaseView.swift in Sources */,
 				ABBED5D42379F4340011FB85 /* HomeModel.swift in Sources */,

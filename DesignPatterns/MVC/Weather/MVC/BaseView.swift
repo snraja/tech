@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-class BaseView : UIViewController, UpdateViewDelegate
+class BaseView : UIViewController, ControllerToViewProtocol
 {
-    var viewActionDelegate : ViewActionDelegate? 
+    var viewActionDelegate : ViewToControllerProtocol? 
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)

@@ -8,9 +8,9 @@
 
 import Foundation
 
-class BaseModel : UpdateModelDelegate
+class BaseModel : ControllerToModelProtocol
 {
-    var modelDelegate : ModelUpdateDelegate?
+    var modelDelegate : ModelToControllerProtocol?
     
     // For some model update call modelUpdated method with change as string
     required init() {

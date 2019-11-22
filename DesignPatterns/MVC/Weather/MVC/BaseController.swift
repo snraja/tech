@@ -9,15 +9,16 @@
 import Foundation
 import UIKit
 
-class BaseController <TView, TModel> : ModelUpdateDelegate, ViewActionDelegate
+class BaseController <TView, TModel> : ModelToControllerProtocol, ViewToControllerProtocol
                     where TView : BaseView , TModel : BaseModel
 {
-    var updateViewDelegate : UpdateViewDelegate?
-    var updateModelDelegate : UpdateModelDelegate?
+    var updateViewDelegate : ControllerToViewProtocol?
+    var updateModelDelegate : ControllerToModelProtocol?
     
     init() {
-    }
         
+    }
+    
     // updates from the View
     func handleViewAction(action: String) -> Void {
         
@@ -33,6 +34,6 @@ class BaseController <TView, TModel> : ModelUpdateDelegate, ViewActionDelegate
 
     // Model has been updated...
     func modelUpdated(update: String) {
-        
+        fatalError("Did not implement modelUpdated")
     }
 }

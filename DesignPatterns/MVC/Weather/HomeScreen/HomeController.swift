@@ -15,8 +15,7 @@ class HomeController<HView : HomeView, HModel : HomeModel> : BaseController<Home
     public let model : HModel
 
     override init() {
-        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        self.view = storyBoard.instantiateViewController(withIdentifier: "HomeView") as! HView
+        self.view = HomeController.Storyboard.instantiateViewController(withIdentifier: "HomeView") as! HView
         self.model = HModel()
         super.init()
         self.view.viewActionDelegate = self;
@@ -31,5 +30,9 @@ class HomeController<HView : HomeView, HModel : HomeModel> : BaseController<Home
     
     override func viewWillAppearAsync() {
         print("ViewWillAppearAsync")
+    }
+    
+    static var Storyboard : UIStoryboard {
+        return UIStoryboard(name: "Main", bundle: nil)
     }
 }

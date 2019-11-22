@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ViewActionDelegate
+protocol ViewToControllerProtocol
 {
     func handleViewAction(action: String) -> Void
     func viewDidLoadAsync() -> Void

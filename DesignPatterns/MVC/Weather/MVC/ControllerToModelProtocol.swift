@@ -1,5 +1,5 @@
 //
-//  ModelUpdateDelegate.swift
+//  UpdateModel.swift
 //  DP
 //
 //  Created by Narasimha Raja on 10/11/19.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ModelUpdateDelegate
+protocol ControllerToModelProtocol
 {
-    func modelUpdated(update:String) -> Void;
+    func updateModel(action: String) -> Void
 }

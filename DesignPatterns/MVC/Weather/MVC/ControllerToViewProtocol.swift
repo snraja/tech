@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol UpdateViewDelegate
+protocol ControllerToViewProtocol
 {
     func updateView(state:String) -> Void
 }
