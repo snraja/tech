@@ -8,7 +8,16 @@
 
 import UIKit
 
-class BaseViewModel
+class BaseViewModel <Model : BaseModel> : ModelDelegate
 {
-
+    var delegate : ViewModelDelegate?
+    
+    init() {
+    }
+    
+    // ModelDelegate
+    func notifyModelUpdate(update: String) {
+        // model updated, perform relevant changes
+        fatalError("Did not override")
+    }
 }

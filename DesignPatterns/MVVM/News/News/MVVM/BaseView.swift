@@ -8,15 +8,19 @@
 
 import UIKit
 
-class BaseView: UIViewController {
-
-    override func viewDidLoad() {
+class BaseView : UIViewController , ViewModelDelegate
+{
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-
         
     }
     
+    // ViewModelDelegate
+    func notifyViewModelUpdate(update: String) {
+        // View Model updated, perform relevant changes
+        fatalError("Did not override")
+    }
 
     
-
 }

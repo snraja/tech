@@ -10,5 +10,9 @@ import UIKit
 
 class BaseModel
 {
-
+    var delegate : ModelDelegate?
+    
+    required init() {
+        
+    }
 }
