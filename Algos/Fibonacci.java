@@ -1,4 +1,9 @@
-
+// compile: javac Fibonacci.java
+// run: java Fibonacci 12
+// Output :
+// Time taken 609 nano seconds
+// Febonacci of 12 is 144
+//
 
 public class Fibonacci
 {
@@ -16,7 +21,7 @@ public class Fibonacci
 		}
 
 		long end = System.nanoTime();
-		System.out.println("Time taken " + (end - start));
+		System.out.println("Time taken " + (end - start) + " nano seconds");
 		return now;
 	}
 
@@ -28,6 +33,6 @@ public class Fibonacci
 			return;
 		}
 		int num = Integer.parseInt(args[0]);
-		System.out.println("Febonacci of "+ num + " is "+ Solution.fib(num));
+		System.out.println("Febonacci of "+ num + " is "+ Fibonacci.fib(num));
 	}
 }

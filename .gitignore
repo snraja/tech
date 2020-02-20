@@ -4,3 +4,6 @@ xcuserdata/
 DerivedData/
 
 build/
+
+
+*.class
