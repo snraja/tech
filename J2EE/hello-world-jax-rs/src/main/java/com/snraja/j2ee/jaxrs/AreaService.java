@@ -16,6 +16,14 @@ public class AreaService {
 	}
 	
 	@GET
+	@Path("/cities-jsondb")
+	@Produces(MediaType.APPLICATION_JSON)
+	public List<AreaModel> getAreaDB() {
+		DataStore ds = new DataStore();
+		return ds.getAreaData();
+	}
+	
+	@GET
 	@Path("/cities-text")
 	@Produces(MediaType.TEXT_PLAIN)
 	public String getAreaInText() {
