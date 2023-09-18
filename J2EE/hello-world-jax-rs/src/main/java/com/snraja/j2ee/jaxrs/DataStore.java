@@ -9,12 +9,10 @@ public class DataStore {
 	Connection conn = null;
 	public DataStore() {
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
+			//Class.forName("com.mysql.cj.jdbc.Driver");
 			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/cities-db?autoReconnect=true&useSSL=false", "root", "admin");
 		} catch (SQLException e) {
 			System.out.println("SQLException occured: " + e);
-		} catch (ClassNotFoundException e) {
-			System.out.println("ClassNotFoundException occured: " + e);
 		} catch(Exception e) {
 			System.out.println("General exception occured:" + e);
 		}
